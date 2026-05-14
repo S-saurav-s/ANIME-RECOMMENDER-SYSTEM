@@ -73,6 +73,11 @@ AnimeRecommender  (src/recommender.py)
     LLM Response → Streamlit UI
 ```
 
+### App Preview
+
+![Anime Recommender UI](screenshots/app-ui.png)
+> Enter a preference like *"best anime"* and get curated recommendations with plot summaries and genre reasoning.
+
 ### First-time Setup — Build the Vector Store
 
 Before running the app for the first time, you must build the ChromaDB vector store from the raw CSV data:
@@ -105,7 +110,7 @@ HUGGINGFACEHUB_API_TOKEN=your_huggingface_token
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/S-saurav-s/TESTING-9.git
+git clone https://github.com/data-guru0/TESTING-9.git
 cd TESTING-9
 
 # 2. Install dependencies
@@ -144,13 +149,15 @@ git push origin main
    - **Networking:** Enable HTTP and HTTPS traffic
 3. Click **Create**, then connect via the browser SSH button.
 
+![Google Cloud VM Instance](screenshots/gcp-vm.png)
+
 ---
 
 ### 3. Set Up the VM
 
 **Clone the repo:**
 ```bash
-git clone https://github.com/S-saurav-s/TESTING-9.git
+git clone https://github.com/data-guru0/TESTING-9.git
 cd TESTING-9
 ```
 
@@ -177,6 +184,9 @@ sudo systemctl enable containerd.service
 systemctl status docker   # Should show: active (running)
 docker ps                 # No containers running yet
 ```
+
+![SSH Terminal on VM](screenshots/ssh-terminal.png)
+> Ubuntu 24.04 LTS VM connected via browser SSH — ready for Docker and Minikube setup.
 
 ---
 
@@ -310,6 +320,9 @@ kubectl get pods -n monitoring
 Go back to Grafana Cloud → click **Go to Homepage** → refresh the page.
 You should now see live metrics from your Kubernetes cluster. 🎉
 
+![Grafana Kubernetes Overview](screenshots/grafana-dashboard.png)
+> Live Kubernetes Overview in Grafana Cloud — 1 cluster, 5 namespaces, 20 pods, 25 containers, all healthy with zero availability issues.
+
 ---
 
 ## 📦 Dependencies
@@ -325,6 +338,20 @@ See [`requirements.txt`](requirements.txt):
 
 ---
 
+## 🖼️ Screenshots
+
+| App UI | GCP VM | SSH Terminal | Grafana Dashboard |
+|---|---|---|---|
+| ![app](screenshots/app-ui.png) | ![vm](screenshots/gcp-vm.png) | ![ssh](screenshots/ssh-terminal.png) | ![grafana](screenshots/grafana-dashboard.png) |
+
+> **To add these screenshots to your repo:** create a `screenshots/` folder in the project root and save the images as:
+> - `screenshots/app-ui.png`
+> - `screenshots/gcp-vm.png`
+> - `screenshots/ssh-terminal.png`
+> - `screenshots/grafana-dashboard.png`
+
+---
+
 ## 👤 Author
 
-**Saurav** — [saurav](https://github.com/S-saurav-s)
+**Saurav** — [data-guru0](https://github.com/data-guru0)
